@@ -35,6 +35,15 @@ pip install -r requirements.txt
 jupyter lab
 ```
 
+## Models
+
+| File | Dataset | Algorithm | Accuracy |
+|---|---|---|---|
+| `iris_classifier.py` | Iris (150 samples) | Random Forest (scikit-learn) | 90% |
+| `mnist_cnn.py` | MNIST (70k images) | 2-layer CNN (PyTorch) | 99.1% |
+
+MNIST downloads data to `data/` on first run (ignored by git). Trained weights (`*.pth`) are also gitignored.
+
 ## Notes
 
 - PyTorch is CPU-only. To add GPU support, reinstall with the CUDA index URL from pytorch.org.
